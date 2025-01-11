@@ -1,0 +1,164 @@
+.cardforlogin{
+    width: 500px;
+    height: 300px;
+    margin-right: 10px;
+    padding: 20px;
+    background-color: rgb(174, 145, 249);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+.loginbackground{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+ background-image: url('/img/1.jpg');
+ background-repeat: no-repeat;
+ background-color: rgb(215, 206, 247);
+
+
+ 
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.logininput{
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    margin-bottom: 2px;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    top: 15px;
+    left: 10%;
+    padding: 10px 0;
+}
+.logininput label{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: cursive;
+    margin-bottom: 5px;
+  
+    color: rgb(241, 250, 225);
+ 
+}
+.logininput input{
+    width: 80%;
+    padding: 12px;
+    border: 1px solid rgb(129, 129, 129);
+    border-radius: 8px;
+    outline: none;
+    font-family: cursive;
+    transition: border-color 0.3s ease;
+    background-color: rgb(238, 251, 241);
+    
+ 
+}
+.logininput input:focus {
+    background-color: rgb(235, 235, 235);
+    border: 2px solid green;
+  }
+  .hominlogin{
+    width: 20px;
+    height: 20px;
+  }
+  .loginbutton{
+    position: relative;
+    font-family: cursive;
+    top: 50px;
+    left: 50px;
+    background-color: rgb(202, 151, 92);
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+
+  }
+  .loginbutton:hover{
+    background-color: rgb(255, 255, 255);
+  }
+  @media screen and (min-width:150px){
+    .cardforlogin{
+      width: 100px;
+      height: 250px;
+    }
+    .logininput input{
+      padding: 2px;
+      font-size: 8px;
+    }
+    .logininput label{
+   font-size: 0.7rem;
+    }
+    .loginbutton{
+      left: 20px;
+     }
+  }
+  @media screen and (min-width:250px){
+    .cardforlogin{
+      width: 150px;
+      height: 300px;
+    }
+    .logininput input{
+      padding: 5px;
+      font-size: 12px;
+    }
+    .logininput label{
+   font-size: 0.7rem;
+    }
+    .loginbutton{
+      left: 20px;
+     }
+  }
+  @media screen and (min-width:300px){
+    .cardforlogin{
+      width: 200px;
+      height: 300px;
+    }
+    .logininput input{
+      padding: 5px;
+    }
+    .logininput label{
+   font-size: 0.7rem;
+    }
+    .loginbutton{
+      left: 20px;
+     }
+  }
+  @media screen and (min-width:500px){
+    .cardforlogin{
+      width: 400px;
+    height: 300px;
+
+    }
+    .logininput input{
+      padding: 8px;
+    }
+    .logininput label{
+      font-size: 0.9rem;
+       }
+       .loginbutton{
+        left: 40px;
+       }
+       
+  }
+  @media screen and (min-width:700px){
+    .cardforlogin{
+      width: 500px;
+    height: 300px;
+    }
+    .logininput input{
+      padding: 12px;
+    }
+    .logininput label{
+      font-size: 1rem;
+       }
+       .loginbutton{
+        left: 50px;
+       }
+  }

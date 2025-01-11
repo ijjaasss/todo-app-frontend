@@ -1,0 +1,433 @@
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.backgorundbody{
+    background-image: url('/img/22.jpg');
+    height: 100vh;
+    width: 100%;
+}
+.homebackgroundimg {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+   
+}
+
+
+.textforintro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: antiquewhite;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: cursive;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 2;
+    animation: slideIn 1.5s ease-out;
+}
+
+.inputtodopage{
+   position: fixed;
+   left: 35%;
+   top: 140px;
+   z-index: 5;
+}
+.inputtodopage input{
+    border-radius: 18px;
+    padding: 9px 10px;
+    border: 1px solid beige;
+    width: 350px;
+    font-family: cursive;
+}
+.inputtodopage button{
+    padding: 10px;
+    border-radius: 100%;
+    background-color: rgb(57, 26, 97);
+    color: white;
+    font-weight: bold;
+    border: none;
+    position: relative;
+    right: 25px;
+}
+.todos-container {
+    position: fixed;
+    top: 30%;
+    left: 20%;
+    z-index: 3;
+    background-color: rgba(228, 222, 252, 0.8); 
+    width: 60%;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.todosinhome {
+    font-size: 1.2rem;
+    padding: 5px 0;
+    border-bottom: 1px solid #b6bcf0;
+    font-family: cursive;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+}
+.listbuttons{
+   position: absolute;
+   right: 10px;
+   padding: 5px 30px;
+   background-color: rgb(250, 216, 216);
+   color: cadetblue;
+   border: 1px solid rgb(79, 105, 87);
+   border-radius: 8px;
+   font-family: cursive;
+}
+                             
+.editbutton{
+    position: absolute;
+    right: 120px;
+    padding: 5px 30px;
+    background-color: rgb(249, 247, 213);
+    border: 1px solid rgb(191, 191, 182);
+    border-radius: 8px;
+    font-family: cursive;
+}
+.popup-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.popup-content{
+    background-color: #b6bcf0;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+.hedingEditTodo{
+    color: rgb(0, 55, 103);
+    font-size: 50px;
+    padding-bottom: 5px;
+    font-family: cursive;
+}
+.popup-container input{
+    padding: 5px;
+    border-radius: 4px;
+    
+    font-family: cursive;
+    width: 90%;
+   border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom:5px ;
+}
+.popup-container input:focus{
+    border: 1px solid black;
+    outline: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.popup-content button{
+    border: none;
+    border-radius: 5px;
+    padding: 8px 4px;
+    margin: 2px;
+    background-color: #ccf1e0;
+}
+.popup-content button:hover{
+    background-color: cornflowerblue;
+}
+@media screen and (min-width:150px){
+    .textforintro{
+        left: 30%;
+        top: 8%;
+        font-size: 0.5rem;
+    }
+    .inputtodopage{
+        left: 25%;
+        top: 100px;
+        z-index: 5;
+     
+    }
+    .inputtodopage input{
+        border-radius: 18px;
+        padding: 2px 5px;
+        border: 1px solid beige;
+        width: 100px;
+    }
+    .inputtodopage button{
+        padding: 2px;
+        border-radius: 100px;
+        background-color: rgb(57, 26, 97);
+        color: white;
+        font-weight: bold;
+        border: none;
+        position: relative;
+        right: 18px;
+    }
+    .todos-container {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .popup-content{
+        background-color: #b6bcf0;
+        padding: 40px 10px;
+        border-radius: 8px;
+        text-align: center;
+       margin: 10px;
+    }
+    .hedingEditTodo{
+        color: rgb(0, 55, 103);
+        font-size: 20px;
+        padding-bottom: 5px;
+        font-family: cursive;
+    }
+    .popup-container input{
+        padding: 8px;
+        border-radius: 4px;
+       
+        font-family: cursive;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom:5px ;
+    }
+    .popup-content button{
+        border: none;
+        border-radius: 5px;
+        padding: 8px 4px;
+        margin: 2px;
+        background-color: #ccf1e0;
+    }
+    
+}
+@media screen and (min-width:250px){
+    .textforintro{
+        left: 30%;
+        top: 15%;
+        font-size: 0.7rem;
+    }
+    .inputtodopage{
+        left: 30%;
+        top: 100px;
+        z-index: 5;
+     
+    }
+    .inputtodopage input{
+        border-radius: 18px;
+        padding: 2px 5px;
+        border: 1px solid beige;
+        width: 100px;
+    }
+    .inputtodopage button{
+        padding: 2px;
+        border-radius: 100px;
+        background-color: rgb(57, 26, 97);
+        color: white;
+        font-weight: bold;
+        border: none;
+        position: relative;
+        right: 18px;
+    }
+    .todos-container {
+        width: 100%;  /* Make the container take up more screen width */
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px;
+    }
+    .popup-content{
+        background-color: #b6bcf0;
+        padding: 40px 10px;
+        border-radius: 8px;
+        text-align: center;
+       margin: 10px;
+    }
+}
+@media screen and (min-width:350px){
+    .textforintro{
+        left: 30%;
+        top: 10%;
+        font-size: 1rem;
+    }
+    .inputtodopage{
+        left: 25%;
+        top: 70px;
+        z-index: 5;
+     
+    }
+    .inputtodopage input{
+        border-radius: 18px;
+        padding: 2px 5px;
+        border: 1px solid beige;
+        width: 190px;
+    }
+    .inputtodopage button{
+        padding: 2px;
+        border-radius: 100px;
+        background-color: rgb(57, 26, 97);
+        color: white;
+        font-weight: bold;
+        border: none;
+        position: relative;
+        right: 18px;
+    }
+    .todos-container {
+        width: 75%;
+    }
+}
+@media screen and (min-width:410px){
+    .textforintro{
+        left: 32%;
+        top: 10%;
+        font-size: 1rem;
+    }
+    .inputtodopage{
+        left: 30%;
+        top: 70px;
+        z-index: 5;
+     
+    }
+    .inputtodopage input{
+        border-radius: 18px;
+        padding: 2px 5px;
+        border: 1px solid beige;
+        width: 190px;
+    }
+    .inputtodopage button{
+        padding: 2px;
+        border-radius: 100px;
+        background-color: rgb(57, 26, 97);
+        color: white;
+        font-weight: bold;
+        border: none;
+        position: relative;
+        right: 18px;
+    }
+    
+}
+@media screen and (min-width:500px){
+    .textforintro{
+        left: 30%;
+        top: 10%;
+        font-size: 1.2rem;
+    }
+    .inputtodopage{
+        left: 35%;
+        top: 70px;
+        z-index: 5;
+     
+    }
+    .inputtodopage input{
+        border-radius: 18px;
+        padding: 2px 5px;
+        border: 1px solid beige;
+        width: 190px;
+    }
+    .inputtodopage button{
+        padding: 2px;
+        border-radius: 100px;
+        background-color: rgb(57, 26, 97);
+        color: white;
+        font-weight: bold;
+        border: none;
+        position: relative;
+        right: 18px;
+    }
+    .todos-container {
+        width: 70%;
+    }
+}
+@media screen and (min-width:720px){
+    .textforintro{
+        left: 30%;
+        top: 15%;
+        font-size: 1.5rem;
+    }
+    .inputtodopage{
+        left: 40%;
+        top: 70px;
+        z-index: 5;
+     
+    }
+    .inputtodopage input{
+        border-radius: 18px;
+        padding: 8px 5px;
+        border: 1px solid beige;
+        width: 190px;
+    }
+    .inputtodopage button{
+        padding: 7px;
+        border-radius: 100px;
+        background-color: rgb(57, 26, 97);
+        color: white;
+        font-weight: bold;
+        border: none;
+        position: relative;
+        right: 23px;
+    }
+    .todos-container {
+        width: 60%;
+    }
+}
+@media screen and (min-width:1000px){
+    .textforintro{
+        left: 30%;
+        top: 15%;
+        font-size: 1.5rem;
+    }
+    .inputtodopage{
+        left: 35%;
+        top: 70px;
+        z-index: 5;
+     
+    }
+    .inputtodopage input{
+        border-radius: 18px;
+        padding: 10px 5px;
+        border: 1px solid beige;
+        width: 300px;
+    }
+    .inputtodopage button{
+        padding: 10px;
+        border-radius: 100px;
+        background-color: rgb(57, 26, 97);
+        color: white;
+        font-weight: bold;
+        border: none;
+        position: relative;
+        right: 23px;
+    }
+}
+@media screen and (min-width:1100px){
+    .textforintro{
+        left: 50%;
+        top: 50%;
+        font-size: 3rem;
+    }
+}
