@@ -1,16 +1,17 @@
 .hedingname{
     color: rgb(0, 42, 90);
     font-family: cursive;
+    
 }
 .allheader{
     background-color: #d5c8f4;
     padding: 10px 20px ;
     text-align: center;
-    display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
     z-index: 1000;
     
     
@@ -20,8 +21,8 @@
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 20px;
-    justify-content: space-between;
+    gap: 20%;
+    justify-content: center;
     
 }
 .linkofnav{
@@ -35,9 +36,11 @@
     height: 20px;
     padding: 0;
     margin: 0;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
+   position: fixed;
+  right: 2%;
+  top: 2%;
+    align-items: end;
+   
 }
 .dropdown-menu{
     list-style: none;
@@ -69,7 +72,7 @@
         flex-direction: column;
     }
     .urloflist{
-        gap: 10px;
+        gap: 5%;
     }
     .hedingname{
         font-size: 15px;
@@ -85,6 +88,23 @@
     }
     .hedingname{
         font-size: 22px;
+    }
+    .urloflist{
+        gap: 10%;
+    }
+    .linkofnav{
+        font-size: 15px;
+    }
+}
+@media screen and (min-width:350px){
+    .allheader{
+        flex-direction: row;
+    }
+    .hedingname{
+        font-size: 22px;
+    }
+    .urloflist{
+        gap: 20%;
     }
     .linkofnav{
         font-size: 15px;

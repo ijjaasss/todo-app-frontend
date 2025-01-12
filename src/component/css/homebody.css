@@ -15,7 +15,7 @@
     width: 100%;
 }
 .homebackgroundimg {
-    position: relative;
+    position: fixed;
     width: 100%;
     height: auto;
     z-index: 1;
@@ -24,7 +24,7 @@
 
 
 .textforintro {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     color: antiquewhite;
@@ -87,8 +87,14 @@ table {
 td {
     padding: 10px;
     text-align: left;
+    max-width: 200px;
+    height: auto;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+   ;
 }
-.listbuttons{
+/* .listbuttons{
    position: absolute;
    right: 10px;
    padding: 5px 30px;
@@ -97,9 +103,9 @@ td {
    border: 1px solid rgb(79, 105, 87);
    border-radius: 8px;
    font-family: cursive;
-}
+} */
                              
-.editbutton{
+/* .editbutton{
     position: absolute;
     right: 120px;
     padding: 5px 30px;
@@ -107,7 +113,23 @@ td {
     border: 1px solid rgb(191, 191, 182);
     border-radius: 8px;
     font-family: cursive;
-}
+} */
+ .editiconbutton{
+    border: none;
+    background: none;
+    padding-right: 20px;
+ }
+ .editimagebutton{
+    width: 30px;
+ }
+ .deleticonbutton{
+    border: none;
+    background: none;
+    position: absolute;
+ }
+ .deleteimagebutton{
+    width: 30px;
+ }
 .popup-container{
     position: fixed;
     top: 0;
@@ -190,7 +212,7 @@ td {
         right: 18px;
     }
     .todos-container {
-        width: 90%;
+        width: 80%;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -225,12 +247,32 @@ td {
         margin: 2px;
         background-color: #ccf1e0;
     }
+    .editiconbutton{
+        border: none;
+        background: none;
+        padding-right: 10px;
+        display: block;
+     }
+     .editimagebutton{
+        width: 15px;
+     }
+     .deleticonbutton{
+        border: none;
+        background: none;
+       
+
+     }
+    
+     
+     td{
+        font-size: 10px;
+     }
     
 }
 @media screen and (min-width:250px){
     .textforintro{
         left: 30%;
-        top: 15%;
+        top: 20%;
         font-size: 0.7rem;
     }
     .inputtodopage{
@@ -243,7 +285,7 @@ td {
         border-radius: 18px;
         padding: 2px 5px;
         border: 1px solid beige;
-        width: 100px;
+        width: 150px;
     }
     .inputtodopage button{
         padding: 2px;
@@ -256,7 +298,7 @@ td {
         right: 18px;
     }
     .todos-container {
-        width: 100%;  /* Make the container take up more screen width */
+        width: 80%;  /* Make the container take up more screen width */
         left: 50%;
         transform: translateX(-50%);
         padding: 10px;
@@ -268,11 +310,33 @@ td {
         text-align: center;
        margin: 10px;
     }
+    .editiconbutton{
+        border: none;
+        background: none;
+        padding-right: 10px;
+        display: block;
+     }
+     .editimagebutton{
+        width: 15px;
+     }
+     .deleticonbutton{
+        border: none;
+        background: none;
+       
+
+     }
+  
+     .deleteimagebutton{
+        width: 15px;
+     }
+     td{
+        font-size: 15px;
+     }
 }
 @media screen and (min-width:350px){
     .textforintro{
         left: 30%;
-        top: 10%;
+        top: 15%;
         font-size: 1rem;
     }
     .inputtodopage{
@@ -283,12 +347,12 @@ td {
     }
     .inputtodopage input{
         border-radius: 18px;
-        padding: 2px 5px;
+        padding: 4px 5px;
         border: 1px solid beige;
         width: 190px;
     }
     .inputtodopage button{
-        padding: 2px;
+        padding: 6px;
         border-radius: 100px;
         background-color: rgb(57, 26, 97);
         color: white;
@@ -298,13 +362,40 @@ td {
         right: 18px;
     }
     .todos-container {
-        width: 75%;
+        width: 90%;
     }
+    .editiconbutton{
+        border: none;
+        background: none;
+        padding-top: 10px;
+        margin-right: 10px;
+        display: inline;
+     }
+     .editimagebutton{
+        width: 20px;
+     }
+     .deleticonbutton{
+        border: none;
+        background: none;
+       padding-top: 10px;
+
+     }
+  
+     .deleteimagebutton{
+        width: 20px;
+     }
+     td{
+        font-size: 15px;
+     }
+     tr{
+        height: 60px;
+     }
+    
 }
 @media screen and (min-width:410px){
     .textforintro{
         left: 32%;
-        top: 10%;
+        top: 20%;
         font-size: 1rem;
     }
     .inputtodopage{
@@ -315,12 +406,12 @@ td {
     }
     .inputtodopage input{
         border-radius: 18px;
-        padding: 2px 5px;
+        padding: 6px 5px;
         border: 1px solid beige;
         width: 190px;
     }
     .inputtodopage button{
-        padding: 2px;
+        padding: 8px;
         border-radius: 100px;
         background-color: rgb(57, 26, 97);
         color: white;
@@ -329,12 +420,34 @@ td {
         position: relative;
         right: 18px;
     }
+    .editiconbutton{
+        border: none;
+        background: none;
+        padding-right: 10px;
+        display: inline;
+     }
+     .editimagebutton{
+        width: 20px;
+     }
+     .deleticonbutton{
+        border: none;
+        background: none;
+       
+
+     }
+  
+     .deleteimagebutton{
+        width: 20px;
+     }
+     td{
+        font-size: 15px;
+     }
     
 }
 @media screen and (min-width:500px){
     .textforintro{
         left: 30%;
-        top: 10%;
+        top: 18%;
         font-size: 1.2rem;
     }
     .inputtodopage{
@@ -345,12 +458,12 @@ td {
     }
     .inputtodopage input{
         border-radius: 18px;
-        padding: 2px 5px;
+        padding: 5px 5px;
         border: 1px solid beige;
         width: 190px;
     }
     .inputtodopage button{
-        padding: 2px;
+        padding: 7px;
         border-radius: 100px;
         background-color: rgb(57, 26, 97);
         color: white;
@@ -362,6 +475,29 @@ td {
     .todos-container {
         width: 70%;
     }
+    .editiconbutton{
+        border: none;
+        background: none;
+        padding-right: 10px;
+        display: inline;
+     }
+     .editimagebutton{
+        width: 20px;
+     }
+     .deleticonbutton{
+        border: none;
+        background: none;
+       
+
+     }
+  
+     .deleteimagebutton{
+        width: 20px;
+     }
+     td{
+        font-size: 17px;
+     }
+    
 }
 @media screen and (min-width:720px){
     .textforintro{
@@ -392,8 +528,11 @@ td {
         right: 23px;
     }
     .todos-container {
-        width: 60%;
+        width: 70%;
     }
+    td{
+        font-size: 20px;
+     }
 }
 @media screen and (min-width:1000px){
     .textforintro{

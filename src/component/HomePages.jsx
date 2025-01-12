@@ -112,7 +112,10 @@ const handleProfileUpdate= async ()=>{
 }
   return (
       <div className="backgorundbody">
-          <img src="/img/1.jpg" alt="Background Image" className="homebackgroundimg" />
+          <picture className="homebackgroundimg" >
+            <source srcSet="/img/1.jpg" media="(max-width: 600px)"/>
+            <img src="/img/picutr.jpg" alt="" />
+          </picture>
           <h1 className="textforintro">Hey {user.name}, remember your tasks and stay focused on accomplishing your goals!</h1>
 <div className="inputtodopage" >
 <input type="text" placeholder="Add your task" value={text} onChange={(e)=>setText(e.target.value)}/>
@@ -127,9 +130,11 @@ const handleProfileUpdate= async ()=>{
                       {todo.map((val, ind) => (
                           <tr className="todosinhome" key={ind}>
                               <td>{val.message}</td>
-                              <button className="editbutton" onClick={()=>PopUpclik(val._id,val.message)}>edit</button>
-                              <button className="listbuttons" onClick={()=>deleteValueis(val._id)}>delete</button>
-                          </tr>
+                             
+                              <button   onClick={()=>PopUpclik(val._id,val.message)} className="editiconbutton"><img src="/img/pen-icon-png-7.png" className="editimagebutton"></img></button>
+                              <button  onClick={()=>deleteValueis(val._id)}  className="deleticonbutton"><img src="/img/delet icon.png" className="deleteimagebutton"></img></button>
+                             
+                              </tr>
                       ))}
                   </tbody>
               </table>

@@ -47,7 +47,9 @@ const onLogin= async (e)=>{
 
       
         <div className="cardforlogin">
-            <a href="/" ><img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="" className='hominlogin'/></a>
+            <a href="/" >
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="" className='hominlogin'/>
+            </a>
             <form onSubmit={onLogin}>
                 <div className='logininput'> 
                     <label htmlFor="email">Email</label>
