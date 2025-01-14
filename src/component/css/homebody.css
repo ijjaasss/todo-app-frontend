@@ -204,6 +204,7 @@ td {
         left: 30%;
         top: 8%;
         font-size: 0.5rem;
+        
     }
     .inputtodopage{
         left: 25%;
@@ -348,12 +349,28 @@ td {
      td{
         font-size: 15px;
      }
+     .textforintro{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .inputtodopage input{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .todosinhome{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .hedingEditTodo{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .popup-container input{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
 }
 @media screen and (min-width:350px){
     .textforintro{
         left: 30%;
         top: 15%;
         font-size: 1rem;
+        
     }
     .inputtodopage{
         left: 25%;
@@ -437,6 +454,7 @@ td {
      tr{
         height: 60px;
      }
+     
     
 }
 @media screen and (min-width:410px){
@@ -545,6 +563,21 @@ td {
      td{
         font-size: 17px;
      }
+     .textforintro{
+        font-family: cursive;
+        }
+        .inputtodopage input{
+        font-family: cursive;
+        }
+        .todosinhome{
+        font-family:cursive;
+        }
+        .hedingEditTodo{
+        font-family: cursive;
+        }
+        .popup-container input{
+        font-family: cursive;
+        }
     
 }
 @media screen and (min-width:720px){

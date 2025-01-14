@@ -103,6 +103,35 @@
         width: 20px;
         height: 20px;
     }
+    .registrationform label{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .registrationform input{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .registerbutton{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    
+}
+@media screen and (min-width:310px){
+    .registrationcard{
+        width: 250px;
+    height: 500px;
+    }
+    .registrationform label{
+        font-size: 1rem;
+    }
+    .registrationform input{
+        padding: 7px;
+    }
+    .registerbutton{
+        left: 70%;
+    }
+    .hominregistration{
+        width: 20px;
+        height: 20px;
+    }
 }
 @media screen and (min-width:410px){
     .registrationcard{
@@ -141,4 +170,13 @@
         width: 20px;
         height: 20px;
     }
+    .registrationform label{
+        font-family: cursive;
+        }
+        .registrationform input{
+        font-family: cursive;
+        }
+        .registerbutton{
+        font-family: cursive;
+        }
 }

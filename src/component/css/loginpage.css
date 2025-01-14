@@ -114,6 +114,18 @@
     .loginbutton{
       left: 20px;
      }
+     .logininput{
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      .logininput label{
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      .logininput input{
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+       .loginbutton{
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
   }
   @media screen and (min-width:300px){
     .cardforlogin{
@@ -129,6 +141,8 @@
     .loginbutton{
       left: 20px;
      }
+     
+
   }
   @media screen and (min-width:500px){
     .cardforlogin{
@@ -145,6 +159,18 @@
        .loginbutton{
         left: 40px;
        }
+       .logininput{
+        font-family: cursive;
+        }
+        .logininput label{
+        font-family: cursive;
+        }
+        .logininput input{
+        font-family: cursive;
+        }
+         .loginbutton{
+        font-family: cursive;
+        }
        
   }
   @media screen and (min-width:700px){

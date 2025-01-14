@@ -95,8 +95,14 @@
     .linkofnav{
         font-size: 15px;
     }
+    .hedingname{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .linkofnav{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
 }
-@media screen and (min-width:350px){
+@media screen and (min-width:500px){
     .allheader{
         flex-direction: row;
     }
@@ -109,4 +115,12 @@
     .linkofnav{
         font-size: 15px;
     }
+    .hedingname{
+        font-family:cursive;
+        }
+        .linkofnav{
+        font-family: cursive;
+        }
+    
+
 }
