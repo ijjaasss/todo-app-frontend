@@ -8,11 +8,18 @@
         transform: translateY(0);
     }
 }
-
+body {
+    height: auto; 
+    margin: 0;
+    overflow-y: scroll; 
+}
 .backgorundbody{
     background-image: url('/img/22.jpg');
-    height: 100vh;
-    width: 100%;
+    background-attachment: fixed; /* Keep the background fixed */
+    background-size: cover; /* Cover the whole screen */
+    background-position: center; /* Center the background image */
+    height: auto; /* Allow content to overflow */
+    min-height: 100vh; /* Ensure minimum height is the full viewport */
 }
 .homebackgroundimg {
     position: fixed;
@@ -61,7 +68,7 @@
     right: 25px;
 }
 .todos-container {
-    position: fixed;
+    position: absolute;
     top: 30%;
     left: 20%;
     z-index: 3;
@@ -70,6 +77,12 @@
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-height: 400px; 
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color:rgba(200, 159, 236, 0.87) rgba(0, 0, 0, 0.1);
+    
+  
 }
 
 .todosinhome {
