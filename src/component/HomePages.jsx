@@ -19,7 +19,7 @@ function HomePages() {
    const [phone, setPhone] = useState('');
    const {editprofile}=useSelector((state)=>state.user)
    const {URl}=useSelector((state)=>state.user)
-   console.log(URl);
+
    const dispatch=useDispatch()
 useEffect(()=>{
     const storId=localStorage.getItem('Id')
@@ -52,6 +52,8 @@ try {
     if(text.length>1){
         const updatedata=[...todo,{message:text}]
         const response= await axios.patch(`${URl}/api/v1/updatedtodo/${id}`,{ todo: updatedata })
+      
+        setTodo(response.data.user.todo)
         setText('')
         toast.dark(response.data.message)
     
@@ -71,6 +73,8 @@ try {
 const deleteValueis= async (toid)=>{
   
     const response= await axios.delete(`${URl}/api/v1/deletetodo/${id}/${toid}`)
+    console.log(response.data.user);
+    
     setTodo(response.data.user.todo)
     
     

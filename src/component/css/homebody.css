@@ -127,6 +127,9 @@ td {
     background: none;
     position: absolute;
  }
+ .deleticonbutton:active{
+    background-color: #b6bcf0;
+ }
  .deleteimagebutton{
     width: 30px;
  }
@@ -364,6 +367,37 @@ td {
     .todos-container {
         width: 90%;
     }
+    .popup-content{
+        background-color: #b6bcf0;
+        padding: 50px 30px;
+        border-radius: 8px;
+        text-align: center;
+       margin: 20px;
+    }
+    .hedingEditTodo{
+        color: rgb(0, 55, 103);
+        font-size: 25px;
+        padding-bottom: 5px;
+        font-family: cursive;
+    }
+    .popup-container input{
+        padding: 10px;
+        border-radius: 4px;
+        font-family: cursive;
+        font-size: 20px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom:5px ;
+    }
+    .popup-content button{
+        border: none;
+        border-radius: 5px;
+        padding: 10px 7px;
+        margin: 2px;
+        background-color: #ccf1e0;
+    }
     .editiconbutton{
         border: none;
         background: none;
@@ -420,6 +454,7 @@ td {
         position: relative;
         right: 18px;
     }
+
     .editiconbutton{
         border: none;
         background: none;
@@ -517,6 +552,37 @@ td {
         border: 1px solid beige;
         width: 190px;
     }
+    .popup-content{
+        background-color: #b6bcf0;
+        padding: 70px 50px;
+        border-radius: 8px;
+        text-align: center;
+       margin: 20px;
+    }
+    .hedingEditTodo{
+        color: rgb(0, 55, 103);
+        font-size: 25px;
+        padding-bottom: 5px;
+        
+    }
+    .popup-container input{
+        padding: 12px;
+        border-radius: 4px;
+    
+        font-size: 26px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom:5px ;
+    }
+    .popup-content button{
+        border: none;
+        border-radius: 5px;
+        padding: 10px 7px;
+        margin: 2px;
+        background-color: #ccf1e0;
+    }
     .inputtodopage button{
         padding: 7px;
         border-radius: 100px;
@@ -561,6 +627,37 @@ td {
         border: none;
         position: relative;
         right: 23px;
+    }
+    .popup-content{
+        background-color: #b6bcf0;
+        padding: 80px 60px;
+        border-radius: 8px;
+        text-align: center;
+       margin: 20px;
+    }
+    .hedingEditTodo{
+        color: rgb(0, 55, 103);
+        font-size: 30px;
+        padding-bottom: 5px;
+        
+    }
+    .popup-container input{
+        padding: 14px;
+        border-radius: 4px;
+    
+        font-size: 28px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom:5px ;
+    }
+    .popup-content button{
+        border: none;
+        border-radius: 5px;
+        padding: 15px 10px;
+        margin: 2px;
+        background-color: #ccf1e0;
     }
 }
 @media screen and (min-width:1100px){
