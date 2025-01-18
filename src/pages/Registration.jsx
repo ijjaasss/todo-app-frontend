@@ -14,10 +14,11 @@ function Registration() {
   const navigate=useNavigate()
   const onregistration=async (e)=>{
     e.preventDefault(); 
+    const trimmedEmail = email.trim()
 
 try {
-  const response= await axios.post(`${URl}/api/v1/register`,{email,password,phone,name})
-console.log(response);
+  const response= await axios.post(`${URl}/api/v1/register`,{email:trimmedEmail,password,phone,name})
+
 if(response.data.success){
   toast.success(response.data.message)
 navigate('/login')

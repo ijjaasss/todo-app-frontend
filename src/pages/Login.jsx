@@ -14,11 +14,11 @@ function Login() {
  const {URl}=useSelector((state)=>state.user)
 const dispatch=useDispatch()
 const onLogin= async (e)=>{
-   
+  const trimmedEmail = email.trim()
     e.preventDefault(); 
     try {
-      const response= await  axios.post(`${URl}/api/v1/login`,{email,password})
-      
+      const response= await  axios.post(`${URl}/api/v1/login`,{email:trimmedEmail,password})
+      console.log(response.data)
       if(response.data.success){
         toast.success(response.data.message)
         
